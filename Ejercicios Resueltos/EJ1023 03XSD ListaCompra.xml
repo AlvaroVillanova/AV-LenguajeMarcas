@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema-instance">
+    <xs.element name="listacompras">
+        <xs.complexType>
+            <xs.element name="venta">
+                <xs.complexType>
+                    <xs.element name="ventaacredito">
+                        <xs.complexType>
+                            <xs.element name="cantidadCredito">
+                            </xs.element>
+                        </xs.complexType>
+                    </xs.element>
+                </xs.complexType>
+            </xs.element>
+        </xs.complexType>
+    </xs.element>
+</xs:schema>
