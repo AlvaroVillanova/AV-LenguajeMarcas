@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE catalogo [ 
+    <!ELEMENT catalogo (producto)+>
+    <!ELEMENT producto (nombre, precio, descripcion, caracteristicas)>
+    <!ELEMENT nombre (#PCDATA)>
+    <!ELEMENT precio (#PCDATA)>
+    <!ELEMENT descripcion (#PCDATA)>
+    <!ELEMENT caracteristicas (caracteristica)+>
+    <!ELEMENT caracteristica (#PCDATA)>
+]>
+
+<catalogo>
+    <producto>
+        <nombre>Monitor 56</nombre>
+        <precio>100</precio>
+        <descripcion> Lorem ipsum dolor sit. </descripcion>
+        <caracteristicas>
+            <caracteristica>16:9</caracteristica>
+            <caracteristica>negro</caracteristica>
+            <caracteristica>24</caracteristica>
+        </caracteristicas>
+    </producto>
+    <producto>
+        <nombre>Monitor 56</nombre>
+        <precio>100</precio>
+        <descripcion> Lorem ipsum dolor sit. </descripcion>
+        <caracteristicas>
+            <caracteristica>16:9</caracteristica>
+            <caracteristica>negro</caracteristica>
+            <caracteristica>24</caracteristica>
+        </caracteristicas>
+    </producto>
+</catalogo>

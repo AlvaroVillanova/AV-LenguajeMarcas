@@ -1,0 +1,87 @@
+EJ1
+Crea un fichero XML con DTD integrado que cumpla los siguientes requisitos
+Elemento raíz videojuegos
+videojuegos está compuesto de elementos videojuego
+videojuego está compuesto por nombre, descripción, fecha de lanzamiento (dia, mes y año), nombre equipo desarrollo y nombre de empresa distribuidora.
+Además, videojuego tiene una lista géneros
+géneros debe tener uno o más elementos género.
+género está compuesto por nombre y descripción
+La descripción de los géneros es opcional
+La fecha de lanzamiento puede tener solo año (sin día ni mes)
+Debe haber al menos un videojuego.
+
+
+EJ2
+Crea un fichero XML con DTD integrado que cumpla los siguientes requisitos
+Elemento raíz marcadores
+marcadores está compuesto de elementos página
+página está compuesto por nombre, descripción y url.
+la descripción de las páginas es opcional
+Puede no haber páginas en los marcadores.
+
+
+EJ3
+En un departamento se ha decidido la siguiente estructura para ficheros de datos que se tengan que mover de unos software a otros.
+La raíz debe ser el elemento <listacompras>
+Dentro de <listacompras> debe haber uno o más elementos <venta>
+Una venta puede llevar dentro uno de dos: <ventaacredito> o <ventainmediata>
+Un elemento <ventaacredito> consta de : un elemento <fechafinpago> que es optativo y un elemento <cantidad> que es obligatorio.
+Un elemento <ventainmediata> lleva dentro dos cosas: un elemento <cantidad> que es obligatorio y un elemento <divisa> que también es obligatorio.
+
+
+EJ4
+Un mayorista de productos de librería desea tener un formato de almacenamiento de datos para reflejar la información de su inventario.
+El elemento raíz debe ser <inventario>
+Dentro de inventario pueden ir elementos <lapiz>, <cuaderno> o <boligrafo> repetidos y en cualquier orden.
+Todo <lapiz> puede tener un elemento <dureza>
+Todo cuaderno debe llevar dos elementos: <numhojas> y <estilo>
+Todo boligrafo lleva un <precio> y puede o no llevar un elemento <color>
+
+
+EJ5
+Unos programadores necesitan estructurar la información que intercambiarán los ficheros de sus aplicaciones para lo cual han determinado los requisitos siguientes.
+Los ficheros deben tener un elemento <listafacturas>
+Dentro de la lista debe haber una o más facturas.
+Las facturas tienen un atributo fecha que es optativo.
+Toda factura tiene un emisor, que es un elemento obligatorio y que debe tener un atributo cif que es obligatorio. Dentro de emisor debe haber un elemento nombre, que es obligatorio y puede o no haber un elemento volumenventas.
+Toda factura debe tener un elemento pagador, el cual tiene exactamente la misma estructura que emisor.
+Toda factura tiene un elemento importe.
+
+
+EJ6
+Un instituto necesita registrar los cursos y alumnos que estudian en él y necesita una DTD para comprobar los documentos XML de los programas que utiliza:
+Tiene que haber un elemento raíz listacursos. Tiene que haber uno o más cursos.
+Un curso tiene uno o más alumnos
+Todo alumno tiene un DNI, un nombre y un apellido, puede que tenga segundo apellido o no.
+Un alumno escoge una lista de asignaturas donde habrá una o más asignaturas. Toda asignatura tiene un nombre, un atributo código y un profesor.
+Un profesor tiene un NRP (Número de Registro Personal), un nombre y un apellido (también puede tener o no un segundo apellido).
+
+
+EJ7
+Se desea crear un formato de intercambio de datos para una empresa mayorista de libros con el fin de que sus distintos programas puedan manejar la información interna. El formato de archivo debe tener la siguiente estructura:
+El elemento raíz es «operaciones».
+Dentro de «operaciones» hay uno o más elementos «operacion».
+Una «operacion» puede ser «venta», «compra», o cualquier combinación y secuencia de ellas, pero debe haber al menos una.
+Una venta tiene dentro un elemento «titulosvendidos». Dentro de «titulosvendidos» se almacenan estos datos:
+Uno o más elementos «título».
+La cantidad total de libros vendidos.
+Puede haber un elemento «entregado» que indique si la entrega se ha realizado.
+Debe haber un elemento importe con un atributo obligatorio llamado «moneda».
+Una compra tiene dentro un elemento «tituloscomprados». Dentro de él hay esto:
+Uno o más elementos «titulo»
+Un «proveedor».
+Una fecha de compra, que debe desglosarse en elementos día, mes y año
+
+
+EJ8
+La Seguridad Social necesita un formato de intercambio unificado para distribuir la información personal de los afiliados.
+Todo archivo XML contiene un listado de uno o mas afiliados
+Todo afiliado tiene los siguientes elementos:
+DNI o NIE
+Nombre
+Apellidos
+Situación laboral: que tiene que ser una y solo una de entre estas posibilidades: «en_paro», «en_activo», «jubilado», «edad_no_laboral»
+Fecha de nacimiento: que se desglosa en los elementos obligatorios día, mes y anio.
+Listado de bajas: que indica las situaciones de baja laboral del empleado. Dicho listado consta de una repetición de 0 o más bajas:
+Una baja consta de tres elementos: causa (obligatoria), fecha de inicio (obligatorio) y fecha de final (optativa),
+Listado de prestaciones cobradas: consta de 0 o más elementos prestación, donde se indicará la cantidad percibida (obligatorio), la fecha de inicio (obligatorio) y la fecha de final (obligatorio)

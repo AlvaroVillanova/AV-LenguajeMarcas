@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!-- EJ1
+Crea un fichero XML con DTD integrado que cumpla los siguientes requisitos
+1. Elemento raíz videojuegos
+2. videojuegos está compuesto de elementos videojuego
+3. videojuego está compuesto por nombre, descripción, fecha de lanzamiento (dia, mes y año), nombre equipo desarrollo y nombre de empresa distribuidora.
+4. Además, videojuego tiene una lista géneros
+5. géneros debe tener uno o más elementos género.
+6. género está compuesto por nombre y descripción
+7. La descripción de los géneros es opcional
+8. La fecha de lanzamiento puede tener solo año (sin día ni mes)
+9. Debe haber al menos un videojuego. -->
+
+<!DOCTYPE videojuegos [
+    <!ELEMENT videojuegos (videojuego+)>
+    <!ELEMENT videojuego (nombre, descripcion, fecha, desarrollador, distribuidor, generos)>
+    <!ELEMENT nombre (#PCDATA)>
+    <!ELEMENT descripcion (#PCDATA)>
+    <!ELEMENT desarrollador (#PCDATA)>
+    <!ELEMENT distribuidor (#PCDATA)>
+    <!ELEMENT fecha ((dia, mes)?, anio)>
+    <!ELEMENT dia (#PCDATA)>
+    <!ELEMENT mes (#PCDATA)>
+    <!ELEMENT anio (#PCDATA)>
+    <!ELEMENT generos (genero+)>
+    <!ELEMENT genero (nombreGenero, descripcionGenero?)>
+    <!ELEMENT nombreGenero (#PCDATA)>
+    <!ELEMENT descripcionGenero (#PCDATA)>
+]>
+<videojuegos>
+    <videojuego>
+        <nombre>Fallout 3</nombre>
+        <descripcion>Los 50s pero con mutarachas</descripcion>
+        <fecha>
+            <anio>2010</anio>
+        </fecha>
+        <desarrollador>Bethesda</desarrollador>
+        <distribuidor>Bethesda</distribuidor>
+        <generos>
+            <genero>
+                <nombreGenero>RPG</nombreGenero>
+                <descripcionGenero>Cosas</descripcionGenero>
+            </genero>
+            <genero>
+                <nombreGenero>FPS</nombreGenero>
+                <descripcionGenero>PIUM PIUM</descripcionGenero>
+            </genero>
+        </generos>
+    </videojuego>
+</videojuegos>

@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!-- Crea un documento XML con DTD que cumpla los siguientes requisitos:
+1. Elemento raíz Carta
+2. Carta compuesta por 1 o más platos
+3. Cada plato formado por nombre, descripción, alérgenos, e ingredientes. 
+4. Puede haber 0 alérgenos o más.
+5. Debe haber 1 ingrediente o más.
+6. Cada ingrediente está formado por nombre, cantidad y unidad de medida.
+7. Los alérgenos son texto.
+8. El plato puede ser vegano o no. -->
+
+<!DOCTYPE carta [
+    <!ELEMENT carta (plato+)>
+    <!ELEMENT plato (nombrePlato, descripcion, alergeno*, ingredientes, vegano?)>
+    <!ELEMENT nombrePlato (#PCDATA)>
+    <!ELEMENT descripcion (#PCDATA)>
+    <!ELEMENT alergeno (#PCDATA)>
+    <!ELEMENT vegano EMPTY>
+    <!ELEMENT ingredientes (ingrediente+)>
+    <!ELEMENT ingrediente (nombreIngrediente, cantidad, udMedida)>
+    <!ELEMENT nombreIngrediente (#PCDATA)>
+    <!ELEMENT cantidad (#PCDATA)>
+    <!ELEMENT udMedida (#PCDATA)>
+]>
+<carta>
+    <plato>
+        <nombrePlato>Macarrones</nombrePlato>
+        <descripcion>Pasta con tomate</descripcion>
+        <alergeno></alergeno>
+        <alergeno></alergeno>
+        <alergeno></alergeno>
+        <ingredientes>
+            <ingrediente>
+                <nombreIngrediente></nombreIngrediente>
+                <cantidad></cantidad>
+                <udMedida></udMedida>
+            </ingrediente>
+            <ingrediente>
+                <nombreIngrediente></nombreIngrediente>
+                <cantidad></cantidad>
+                <udMedida></udMedida>
+            </ingrediente>
+        </ingredientes>
+        <vegano></vegano>
+    </plato>
+</carta>
