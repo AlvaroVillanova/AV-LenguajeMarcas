@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema-instance" xs:noNamespaceSchemaLocation="EJ1023 03XSD ListaCompra.xsd">
-</xs:schema>
+<xs:Schema xmlns:xs="http://www.w3.org/2001/XMLSchema-instance" xs:SchemaLocation="EJ1023 03XSD ListaCompra.xsd">
+</xs:Schema>
 
 <listacompras>
     <venta>

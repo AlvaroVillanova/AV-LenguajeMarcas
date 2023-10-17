@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<xs:Schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+    <xs.element name="listafacturas">
+        <xs.complexType>
+            <xs.element name="factura" type="xs:date" >
+                <xs:complexType>
+                    <xs:element name="emisor" </xs>
+
+
+                </xs:complexType>
+            </xs.element>
+        </xs.complexType>
+    </xs.listafacturas>
+
+
+</xs:Schema>

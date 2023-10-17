@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<xs:Schema xmlns:xs="http://www.w3.org/2001/XMLSchema"
+    xs:schemaLocation="EJ05 XSD listafacturas.xsd">
+</xs:Schema>
+
+<listafacturas>
+    <factura #atributo fecha??? minOccur="0">
+
+        <emisor att cif OBLIGATORIO>
+            <nombre OBLIGATORIO></nombre>
+            <volumenventas minOccur=0></volumenventas>
+        </emisor>
+        <pagador att cif OBLIGATORIO>
+            <nombre OBLIGATORIO></nombre>
+            <volumenventas minOccur=0></volumenventas>
+        </pagador>
+        <importe></importe>
+
+    </factura>
+
+</listafacturas>

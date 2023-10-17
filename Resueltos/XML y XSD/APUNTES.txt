@@ -1,0 +1,41 @@
+APUNTES
+
+xs:complexType = tiene elementos dentro
+xs:element = un elemento a secas???
+
+
+xs:all = todos los elementos pueden estar en cualquier ordent
+xs:sequence = todos en orden 
+xs:choice = o un elemento u otro
+
+
+( vva al final de secuencia)
+<xs:attribute name="fecha" type="xs:date"><xs:attribute>
+
+name= cosa
+type= xs:integer, xs:date
+use= required, 
+
+ATRIBUTOS
+
+name= le da nombre al atributo 
+minOccurs=0 (si el atributo es opcional)
+maxOccurs=UNBOUNDED (atributos infinitos)
+type= tipo de atributo 
+    xs:integer
+    xs:date
+    xs:string
+    xs:boolean
+    xs:decimal
+    
+
+EJEMPLO ELEMENTO Y RESTRICCIONES
+
+<xs:element name="edad">
+    <xs:simpleType>
+        <xs:restriction base=xs:integer>
+            <xs:minInclusive="0"></
+            <xs:maxExclusive="120"
+        </xs:restriction>
+    </xs:simpletyp>
+</xs:element>
