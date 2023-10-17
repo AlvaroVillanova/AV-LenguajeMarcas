@@ -7,6 +7,10 @@
     <venta>
         <ventaacredito>
             <cantidadCredito>88</cantidadCredito>
+            <fechafinpago></fechafinpago>
         </ventaacredito>
+        <ventainmediata>
+
+        </ventainmediata>
     </venta>
 </listacompras>

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+
+
+
+<inventario>
+    <lapiz>
+        <dureza></dureza>
+    </lapiz>
+    <cuaderno>
+        <numhojas></numhojas>
+        <estilo></estilo>
+    </cuaderno>
+    <boligrafo>
+        <precio></precio>
+        <color></color>
+    </boligrafo>
+</inventario>

@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema-instance">
-    <xs.element name="listacompras">
+    <xs.element name="EJ03 XML ListaCompra">
         <xs.complexType>
             <xs.element name="venta">
                 <xs.complexType>
                     <xs.element name="ventaacredito">
                         <xs.complexType>
-                            <xs.element name="cantidadCredito">
-                            </xs.element>
+                            <xs.element name="cantidadCredito" type="xs:integer">
+                            </xs.element name="fechafinpago" type="xs:date" minOccurs="0">
                         </xs.complexType>
                     </xs.element>
                 </xs.complexType>
