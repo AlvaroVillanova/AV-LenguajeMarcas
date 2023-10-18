@@ -1,16 +1,22 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<xs:Schema xmlns:xs="http://www.w3.org/2001/XMLSchema-instance" xs:SchemaLocation="EJ1023 03XSD ListaCompra.xsd">
-</xs:Schema>
-
-<listacompras>
+<listacompras xmlns:xs="http://www.w3.org/2001/XMLSchema" xs:NoNamespaceSchemaLocation="EJ03 XSD ListaCompra">
+    <venta>
+        <ventainmediata>
+            <cantidadCredito>88</cantidadCredito>
+            <divisa>Euro</divisa>
+        </ventainmediata>
+    </venta>
     <venta>
         <ventaacredito>
             <cantidadCredito>88</cantidadCredito>
-            <fechafinpago></fechafinpago>
+            <fechafinpago>2000-05-05</fechafinpago>
         </ventaacredito>
+    </venta>
+    <venta>
         <ventainmediata>
-
+            <cantidadCredito>88</cantidadCredito>
+            <divisa>Euro</divisa>
         </ventainmediata>
     </venta>
 </listacompras>

@@ -1,18 +1,32 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema-instance">
-    <xs.element name="EJ03 XML ListaCompra">
-        <xs.complexType>
-            <xs.element name="venta">
-                <xs.complexType>
-                    <xs.element name="ventaacredito">
-                        <xs.complexType>
-                            <xs.element name="cantidadCredito" type="xs:integer">
-                            </xs.element name="fechafinpago" type="xs:date" minOccurs="0">
-                        </xs.complexType>
-                    </xs.element>
-                </xs.complexType>
-            </xs.element>
-        </xs.complexType>
-    </xs.element>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+    <xs:element name="listacompras">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="venta" maxOccurs="unbounded">
+                    <xs:complexType>
+                        <xs:choice>
+                            <xs:element name="ventainmediata">
+                                <xs:complexType>
+                                    <xs:sequence>
+                                        <xs:element name="cantidadCredito" type="xs:integer"></xs:element>
+                                        <xs:element name="divisa" type="xs:string"></xs:element>
+                                    </xs:sequence>
+                                </xs:complexType>
+                            </xs:element>
+                            <xs:element name="ventacredito">
+                                <xs:complexType>
+                                    <xs:sequence>
+                                        <xs:element name="cantidadCredito" type="xs:integer"></xs:element>
+                                        <xs:element name="fechafinpago" type="xs:date"></xs:element>
+                                    </xs:sequence>
+                                </xs:complexType>
+                            </xs:element>
+                        </xs:choice>
+                    </xs:complexType>
+                </xs:element>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
 </xs:schema>
