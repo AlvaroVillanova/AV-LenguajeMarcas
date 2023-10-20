@@ -1,7 +1,8 @@
 APUNTES
 
+xs:element = nombra elemento
+
 xs:complexType = tiene elementos dentro
-xs:element = un elemento a secas???
 
 
 xs:all = todos los elementos pueden estar en cualquier ordent
@@ -19,8 +20,10 @@ use= required,
 ATRIBUTOS
 
 name= le da nombre al atributo 
+
 minOccurs=0 (si el atributo es opcional)
-maxOccurs=UNBOUNDED (atributos infinitos)
+maxOccurs="unbounded" (atributos infinitos)
+
 type= tipo de atributo 
     xs:integer
     xs:date
