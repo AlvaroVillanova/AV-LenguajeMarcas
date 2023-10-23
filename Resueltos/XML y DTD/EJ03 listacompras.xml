@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <!-- EJ3
-En un departamento se ha decidido la siguiente estructura para ficheros de datos que se tengan que mover de unos software a otros.
+En un departamento se ha decidido la siguiente estructura para ficheross de datos que se tengan que mover de unos software a otros.
 La raíz debe ser el elemento <listacompras>
 Dentro de <listacompras> debe haber uno o más elementos <venta>
 Una venta puede llevar dentro uno de dos: <ventaacredito> o <ventainmediata>
