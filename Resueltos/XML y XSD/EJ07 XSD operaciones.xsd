@@ -4,20 +4,32 @@
     <xs:element name="operaciones">
         <xs:complexType>
             <xs:sequence>
-                <xs:element name="operacion">
+                <xs:element name="operacion" maxOccurs="unbounded">
                     <xs:complexType>
-                        <xs:sequence maxOccurs="unbounded">
+                        <xs:sequence>
                             <xs:element name="venta">
                                 <xs:complexType>
                                     <xs:choice>
                                         <xs:element name="titulosvendidos">
                                             <xs:complexType>
-                                                <xs:sequence maxOccurs="unbounded">
-                                                    <xs:element name="titulo" type="xs:string"></xs:element>
+                                                <xs:sequence>
+                                                    <xs:element name="titulo" maxOccurs="20">
+                                                        <xs:simpleType>
+                                                            <xs:restriction base="xs:string">
+                                                                <xs:minLength value="5"></xs:minLength>
+                                                                <xs:maxLength value="50"></xs:maxLength>
+                                                            </xs:restriction>
+                                                        </xs:simpleType>
+                                                    </xs:element>
                                                     <xs:element name="totalvendidos" type="xs:integer"></xs:element>
-                                                    <xs:element name="entregado"></xs:element>
-                                                    <xs:element name="importe" type="xs:integer"></xs:element>
+                                                    <xs:element name="entregado" type="xs:boolean"></xs:element>
+                                                    <xs:element name="importe">
+                                                        <xs:simpleType>
+                                                            <xs:restriction base="xs:decimal"></xs:restriction>
+                                                        </xs:simpleType>
+                                                    </xs:element>
                                                 </xs:sequence>
+                                                <xs:attribute name="cantidad" type="xs:integer"></xs:attribute>
                                             </xs:complexType>
                                         </xs:element>
                                     </xs:choice>
@@ -31,15 +43,7 @@
                                                 <xs:sequence maxOccurs="unbounded">
                                                     <xs:element name="tituloC" type="xs:string"></xs:element>
                                                     <xs:element name="proveedor" type="xs:string"></xs:element>
-                                                    <xs:element name="fechacompra">
-                                                        <xs:complexType>
-                                                            <xs:sequence>
-                                                                <xs:element name="dia" type="xs:integer"></xs:element>
-                                                                <xs:element name="mes" type="xs:integer"></xs:element>
-                                                                <xs:element name="anio" type="xs:integer"></xs:element>
-                                                            </xs:sequence>
-                                                        </xs:complexType>
-                                                    </xs:element>
+                                                    <xs:element name="fechacompra" type="xs:date"></xs:element>
                                                 </xs:sequence>
                                             </xs:complexType>
                                         </xs:element>
