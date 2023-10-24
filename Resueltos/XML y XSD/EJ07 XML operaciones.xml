@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<operaciones xmlns:xs="http://www.w3.org/2001/XLMSchema" xs:NoNamespaceSchemaLocation="EJ07 XSD operaciones.xsd">
+    <operacion>
+        <venta>
+            <titulosvendidos>
+                <titulo></titulo>
+                <titulo></titulo>
+                <totalvendidos></totalvendidos>
+                <entregado></entregado>
+                <importe moneda=""></importe>
+            </titulosvendidos>
+        </venta>
+        <compra>
+            <tituloscomprados>
+                <tituloC></tituloC>
+                <proveedor></proveedor>
+                <fechacompra>
+                    <dia></dia>
+                    <mes></mes>
+                    <anio></anio>
+                </fechacompra>
+            </tituloscomprados>
+        </compra>
+    </operacion>
+    <operacion>
+        <venta>
+            <titulosvendidos>
+                <titulo></titulo>
+                <totalvendidos></totalvendidos>
+                <entregado></entregado>
+                <importe moneda=""></importe>
+            </titulosvendidos>
+        </venta>
+    </operacion>
+</operaciones>

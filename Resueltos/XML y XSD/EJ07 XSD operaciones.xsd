@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+    <xs:element name="operaciones">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="operacion">
+                    <xs:complexType>
+                        <xs:sequence maxOccurs="unbounded">
+                            <xs:element name="venta">
+                                <xs:complexType>
+                                    <xs:choice>
+                                        <xs:element name="titulosvendidos">
+                                            <xs:complexType>
+                                                <xs:sequence maxOccurs="unbounded">
+                                                    <xs:element name="titulo" type="xs:string"></xs:element>
+                                                    <xs:element name="totalvendidos" type="xs:integer"></xs:element>
+                                                    <xs:element name="entregado"></xs:element>
+                                                    <xs:element name="importe" type="xs:integer"></xs:element>
+                                                </xs:sequence>
+                                            </xs:complexType>
+                                        </xs:element>
+                                    </xs:choice>
+                                </xs:complexType>
+                            </xs:element>
+                            <xs:element name="compra">
+                                <xs:complexType>
+                                    <xs:choice>
+                                        <xs:element name="tituloscomprados">
+                                            <xs:complexType>
+                                                <xs:sequence maxOccurs="unbounded">
+                                                    <xs:element name="tituloC" type="xs:string"></xs:element>
+                                                    <xs:element name="proveedor" type="xs:string"></xs:element>
+                                                    <xs:element name="fechacompra">
+                                                        <xs:complexType>
+                                                            <xs:sequence>
+                                                                <xs:element name="dia" type="xs:integer"></xs:element>
+                                                                <xs:element name="mes" type="xs:integer"></xs:element>
+                                                                <xs:element name="anio" type="xs:integer"></xs:element>
+                                                            </xs:sequence>
+                                                        </xs:complexType>
+                                                    </xs:element>
+                                                </xs:sequence>
+                                            </xs:complexType>
+                                        </xs:element>
+                                    </xs:choice>
+                                </xs:complexType>
+                            </xs:element>
+                        </xs:sequence>
+                    </xs:complexType>
+                </xs:element>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+</xs:schema>
