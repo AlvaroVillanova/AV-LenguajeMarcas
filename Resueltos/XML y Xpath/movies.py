@@ -9,8 +9,9 @@
 
 from lxml import etree
 
-tree= etree.parse ("movies.xml")
-root= tree.getroot()
+"""
+tree = etree.parse ("movies.xml")
+root = tree.getroot()
 
 
 duracionMinima=input("Dime la duracion minima: ")
@@ -19,7 +20,7 @@ genero=input("Dime el genero a buscar: ")
 
 
 print(root.xpath(f"Movie[@rating='{ratingEdad}'][Genre='{genero}']/Titles[@runtime>='{duracionMinima}']/text()"))
-
+"""
 # Crea un script de python que muestre por pantalla:
 # 1 - La pelicula mas larga
 # 2 - La pelicula mas corta
@@ -30,3 +31,47 @@ print(root.xpath(f"Movie[@rating='{ratingEdad}'][Genre='{genero}']/Titles[@runti
 # y mostrar por pantalla si esta por encima o por debajo de la media.
 #
 # Si la pelicula solicitada no tiene duracion, debe solicitar una pelicula nueva hasta que sea valida.
+
+
+tree = etree.parse ("movies.xml")
+root = tree.getroot()
+
+duracionPeliculas=root.xpath(f"Movie/Title/@runtime")
+
+# Coger la pelicula mas corta:
+
+peliculaMasCortaDuracion=min(duracionPeliculas)
+print("La pelicula mas corta es: ")
+print(root.xpath(f"Movie/Title[@runtime='{peliculaMasCortaDuracion}']/text()"))
+
+
+# Coger la pelicula mas larga
+
+peliculaMasLargaDuracion=max(duracionPeliculas)
+print("La pelicula mas corta es: ")
+print(root.xpath(f"Movie/Title[@runtime='{peliculaMasLargaDuracion}']/text()"))
+
+# Hacer la media de todas las pelis
+duracionTotalPeliculas=0
+
+for pelicula in duracionPeliculas:
+    duracionTotalPeliculas+=int(pelicula)
+
+numTotalPeliculas=len(duracionPeliculas)
+mediaPeliculas=duracionTotalPeliculas//numTotalPeliculas
+
+print(f"La media de todas las peliculas es: {mediaPeliculas}")
+
+# SOLICITAR PELICULA Y ESO
+
+peliculaSolicitada=input("Dime el nombre de una pelicula a buscar: ")
+duracionPeliculaSolicitada=duracionPeliculas.index(peliculaSolicitada)
+
+while duracionPeliculaSolicitada == "":
+    peliculaSolicitada=input("Error, esa pelicula no tiene duracion. Dime el nombre de una pelicula a buscar: ")
+    duracionPeliculaSolicitada=duracionPeliculas.index(peliculaSolicitada)
+
+if duracionPeliculaSolicitada>mediaPeliculas:
+    print(f"La pelicula {peliculaSolicitada} es mas larga que la media de peliculas en la lista ({mediaPeliculas} mins.). ")
+elif duracionPeliculaSolicitada<mediaPeliculas:
+    print(f"La pelicula {peliculaSolicitada} es mas corta que la media de peliculas en la lista ({mediaPeliculas} mins.). ")
