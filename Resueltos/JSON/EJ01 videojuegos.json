@@ -1,0 +1,20 @@
+
+
+{
+    "videojuegos": [
+            {"nombre":"Dark Souls",
+            "descripcion": "Juego de aventuras complicado",
+            "fecha de lanzamiento": 2009,
+            "desarrolladora": "FromSoftware",
+            "distribuidora": "FromSoftware",
+            "generos":["Aventura","Souls-Like"]},
+
+            {"nombre":"LBA2: Twinsen's Oddisey",
+            "descripcion":"Ayuda a Twinsen a salvar al mundo",
+            "fecha de lanzamiento":1996,
+            "desarrolladora":"AdelineSoftware",
+            "distribuidora":"AdelineSoftware",
+            "generos":["Aventura","RPG"]}
+             
+    ]
+}
