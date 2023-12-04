@@ -1,0 +1,24 @@
+{
+    "facturas":[
+        {
+            "fecha":"2420-69-69",
+            "emisor":{
+                "nif":12354564,
+                "nombre":"Pepito",
+                "cantidad":69
+            },
+            "pagador":{
+                "nif":12354564,
+                "nombre":"Pepito",
+                "cantidad":69
+            },
+            "productos":[
+                {"ID":"12345678A",
+                "nombre":"Antoine",
+                "precio":69420,
+                "cantidad":100
+                }],
+            "importe":69420      
+        }
+    ]
+}

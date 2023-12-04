@@ -1,0 +1,23 @@
+{
+    "inventario":[
+        {"lapiz":[
+            {"dureza":"poca"},
+            {"color":"rojo"}
+        ]},
+        {"cuaderno":[
+            {"numhojas":"420"},
+            {"estilo":"paleo-cristiano"}
+        ]},
+        {"boligrafo":[
+            {"precio":100},
+            {"color":"rojo"}
+        ]}
+
+    ]
+
+
+
+
+
+
+}

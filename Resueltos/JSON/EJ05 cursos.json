@@ -1,0 +1,36 @@
+{
+    "cursos": [
+        {
+            "alumnos": [
+                {
+                    "dni": "12345678A",
+                    "nombre": "Eusebio",
+                    "apellido": "Garcia",
+                    "apellido2": "Lavoe",
+                    "asignaturas": [
+                        {
+                            "asignatura": "Matematicas"
+                        },
+                        {
+                            "asignatura": "Criar"
+                        }
+                    ]
+                },
+                {
+                    "dni": "12345678A",
+                    "nombre": "Eusebio",
+                    "apellido": "Garcia",
+                    "apellido2": "Lavoe",
+                    "asignaturas": [
+                        {
+                            "asignatura": "Matematicas"
+                        },
+                        {
+                            "asignatura": "Manual del Baratero"
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}
