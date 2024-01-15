@@ -1,0 +1,24 @@
+
+
+hoy hemos dado
+
+
+
+<h1> a <h7> Headers
+<p> parrafo
+<a href="www.com" target="_blank"<-- Esto es en nueva pestana > hyperlink
+
+<img src="https//lafoto.png" alt="Logo de cosa">
+
+<b> BOLD, solo estilo
+<strong> no solo estilo, sino que tambien semantico, le da importancia al texto y le da fuerza, para que el SEO lo encuentre.
+
+<i> ITALIC, solo estilo
+<em> ITALIC, pero tambien le da enfasis
+
+<blockquote cite="pepito,2023">
+	<footer><cite> un footer con cita de la sita>
+
+
+<hr> (SIN CERRAR) Salto de linea entre parrafos, con una LINEA -------------------------------
+<br> (SIN CERRAR) Salto de linea en texto
