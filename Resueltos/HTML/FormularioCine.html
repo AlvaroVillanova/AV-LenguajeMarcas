@@ -1,0 +1,77 @@
+<!DOCTYPE HTML>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Formulario Registro</title>
+</head>
+
+<!---
+Crea un formulario de registro para una empresa de cines que pida:
+
+Nombre
+apellidos
+email
+Contrase;a (investiga input de contrase;as)
+edad
+fecha nacimiento (investiga input fechas nacimiento)
+checkbox para elegir los cines que visitas (a;ade 4 cines)
+un radio para indicar si se tiene algun tipo de descuento especial.
+
+-->
+
+<body>
+
+    <h1>Formulario Cines</h1>
+
+    <form action="formularioCine.php">
+        
+        <h2>Datos de usuario:</h2>
+        <label for="inputNombre">Nombre: </label>
+        <input type="text" id="inputNombre" name="nombre"><br>
+        
+        <label for="inputApellidos">Apellidos:</label>
+        <input type="text" id="inputApellidos" name="apellidos"><br>
+
+        <label for="inputEmail">Email:</label>
+        <input type="email" id="inputEmail" name="email"><br>
+
+        <label for="inputContrasena">Contrasena :</label>
+        <input type="password" id="inputContrasena" name="contrasena"><br>
+
+        <label for="inputEdad">Edad:</label>
+        <input type="number" id="inputEdad" name="edad"><br>
+
+        <label for="inputFNacimiento">Fecha nacimiento:</label>
+        <input type="date" id="inputFNacimiento" name="fechanacimiento"><br>
+
+        <h2>Cines que visitas:</h2>
+
+        <input type="checkbox" id="cine1" name="cine">
+        <label for="cine1">Multicines A</label>
+        <input type="checkbox" id="cine2" name="cine">
+        <label for="cine2">Multicines B</label><br>
+        <input type="checkbox" id="cine3" name="cine">
+        <label for="cine3">Multicines C</label>
+        <input type="checkbox" id="cine4" name="cine">
+        <label for="cine4">Multicines D</label>
+
+        <h3>Descuento especial?</h3>
+
+        <input type="radio" id="descuentoSI" name="descuento">
+        <label for="descuentoSI">Si</label>
+        <input type="radio" id="descuentoNO" name="descuento">
+        <label for="descuentoNO">No</label>
+
+        <br><br>
+        <input type="submit">
+
+    </form>
+
+
+
+
+
+
+
+</body>
