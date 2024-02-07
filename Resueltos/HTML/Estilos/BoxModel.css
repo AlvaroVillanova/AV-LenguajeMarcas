@@ -1,0 +1,22 @@
+
+#caja{
+    border: red 2px solid; /* Color, ancho, tipo de borde (solid, con puntos, etc...)*/
+    padding-bottom: 100px; /* Solo pixel, sin colores ni nada*/
+    margin: 20; 
+}
+div{
+    height: 100px;
+    width: 400px;
+    background-color: antiquewhite;
+    border: green 3px solid;
+}
+
+#Lorem{
+    margin: auto;
+
+}
+
+h1{
+    border: red 2px solid;
+    margin: 0;
+}

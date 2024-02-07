@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario2</title>
+</head>
+<body>
+    <fieldset>
+        <legend>Rellenar</legend>
+
+        <input type="radio" id="radioIngles" name="idioma" value="Ingles">
+        <label for="radioIngles">Ingles</label><br>
+        <input type="radio" id="radioAleman" name="idioma" value="Aleman">
+        <label for="radioIngles">Aleman</label><br>
+        <input type="radio" id="radioIngles" name="idioma" value="Frances">
+        <label for="radioIngles">Frances</label><br><br>
+
+        <select>
+            <option value="USB">USB</option>
+            <option value="Katana">Katana</option>
+        </select><br>
+
+        <label for="Nombre">Nombre</label>
+        <input type="text" id="Nombre" name="nombre"><br>
+        <label for="Apellidos">Apellidos</label>
+        <input type="text" id="Apellidos" name="apellido"><br><BR>
+
+    </fieldset>
+    <fieldset>
+        <legend>Indique sus preferencias por favor</legend>
+        <select name="genero" id="selecgenero" multiple>
+            <option value="Hombre">Hombre</option>
+            <option value="Mujer">Mujer</option>
+            <option value="NC">No sabe/contesta</option>
+        </select>
+
+        <br>
+        <label for="checkboxMujer">Mujer</label>
+        <input type="checkbox" id="checkboxMujer" name="checkMujer" value="Mujer"><br>
+        <label for="checkboxHombre">Hombre</label>
+        <input type="checkbox" id="checkboxHombre" name="checkHombre" value="Hombre">
+        <br>
+
+        <label for="fechita">Elija una fecha</label>
+        <input type="datetime-local" id="fechita" name="fecha">
+
+    </fieldset>
+
+</body>
+</html>

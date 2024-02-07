@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario2</title>
+</head>
+<body>
+    <form action="Formulario2.php">
+        <fieldset>
+            <legend>Indique sus preferencias por favor</legend>
+
+            <label for="fecha">Elija una fecha:</label>
+            <input type="date" id="fecha" name="fechita">
+            <br>            
+            <label for="fileSelect">Elija un fichero:</label>
+            <input type="file" id="fileSelect" name="ficherito">
+            <br>
+            <input type="radio" id="AMD" name="procesador" value="AMD">
+            <label for="AMD">AMD</label>
+            <input type="radio" id="inteli5" name="procesador" value="inteli5">
+            <label for="inteli5">Intel i5</label>
+            <input type="radio" id="inteli7" name="procesador" value="inteli7">
+            <label for="inteli7">Intel i7</label>
+        </fieldset>
+        <fieldset>
+            <legend>Indique sus preferencias por favor</legend>
+            <input type="radio" id="matematicas" name="asignaturas" value="matematicas" checked>
+            <label for="matematicas">Matematicas</label>
+            <input type="radio" id="Historia" name="asignaturas" value="Historia">
+            <label for="Historia">Historia</label>
+            <input type="radio" id="Geografia" name="asignaturas" value="Geografia">
+            <label for="Geografia">Geografia</label>
+            <input type="radio" id="Lengua" name="asignaturas" value="Lengua">
+            <label for="Lengua">Lengua</label><br>
+
+            <label for="Nombre">Nombre</label>
+            <input type="text" id="Nombre" name="nombre" placeholder="Pedro" required><br>
+            <label for="Apellidos">Apellidos</label>
+            <input type="text" id="Apellidos" name="apellido" required><br>
+            <label for="direccion">Direccion</label>
+            <input type="text" id="direccion" name="direccion" required><br><br>
+
+            <label for="color">Elija un color: </label>
+            <input type="color" id="color" name="color">
+            <br>
+            <textarea id="texto" name="textinho" rows="10" cols="50" placeholder="Utilice este cuadro para escribir"></textarea><br>
+            <label for="fechinha">Elija una fecha:</label>
+            <input type="date" id="fechinha" name="fechiqui"><br>
+            
+            <select name="idioma" id="idioma">
+                <option value="EN">Ingles</option>
+                <option value="DEU">Deutsch</option>
+                <option value="FRE">Francais</option>
+            </select><br>
+
+
+            <label for="horica">Elija una hora:</label>
+            <input type="time" id="horica" name="horica"><br>
+
+            <label for="fileSelect">Elija un fichero:</label>
+            <input type="file" id="fileSelect" name="ficherito">
+            <br>
+            
+            <input type="checkbox" id="mujere" name="sexo">
+            <label for="mujere">Mujer</label>
+
+            
+            <input type="checkbox" id="hombrere" name="sexo">
+            <label for="hombrere">Hombre</label>
+
+
+        </fieldset>
+        <input type="submit">
+    </form>
+</body>
+</html>
